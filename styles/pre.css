@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  position: relative;
+}
+
+.coming-soon {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  top: 6.9rem; /* rip */
+  text-shadow: 0.2rem 0.2rem 0 #0128d1, -0.2rem -0.2rem 0 #ca00e3;
+}
