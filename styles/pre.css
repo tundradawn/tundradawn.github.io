@@ -14,18 +14,47 @@ html {
 }
 
 body {
-  background: black;
-  color: white;
+  background: #00000f;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   position: relative;
 }
 
-.coming-soon {
+.text {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0 #0128d1, -0.2rem -0.2rem 0 #ca00e3;
+}
+
+a.text {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover.text,
+a:active.text {
+  text-shadow: none;
+}
+
+.content-container {
   position: absolute;
   font-size: 1rem;
   left: 0;
   right: 0;
   top: 6.9rem; /* rip */
-  text-shadow: 0.2rem 0.2rem 0 #0128d1, -0.2rem -0.2rem 0 #ca00e3;
+}
+
+.coming-soon {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 2rem;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li:not(:first-of-type) {
+  margin-left: 2rem;
 }
