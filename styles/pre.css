@@ -15,6 +15,7 @@ html {
 
 body {
   background: #00000f;
+  background-image: url('../tundra.gif');
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   position: relative;
