@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  color: #000;
+}
+
+body {
+  background-color: #ffedca;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 68rem;
+  height: 100%;
+}
+
+.row-full {
+  height: 100%;
+}
+
+.main-logo {
+  display: inline-block;
+  width: 100%;
+}
+
+.nerd {
+  margin-bottom: 2rem;
+}
+
+.left-div {
+  background-color: #ff0000;
+}
+
+.right-div {
+  background-color: #00ff00;
+}
+
+@media screen and (max-width: 68em) {
+  .content-container{
+    width: 100%;
+  }
+}
+
+/*@media screen and (max-width: 48em) {
+  .main-logo {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+}*/
