@@ -23,10 +23,9 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-.content-container {
-  margin: 0 auto;
-  width: 68rem;
+.container-fluid-height{
   height: 100%;
+  max-width: 68em;
 }
 
 .row-full {
@@ -41,25 +40,3 @@ body {
 .nerd {
   margin-bottom: 2rem;
 }
-
-.left-div {
-  background-color: #ff0000;
-}
-
-.right-div {
-  background-color: #00ff00;
-}
-
-@media screen and (max-width: 68em) {
-  .content-container{
-    width: 100%;
-  }
-}
-
-/*@media screen and (max-width: 48em) {
-  .main-logo {
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-  }
-}*/
