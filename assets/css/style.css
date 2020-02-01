@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  color: #000;
+}
+
+body {
+  background-color: #ffedca;
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+}
+
+.container-fluid-height{
+  height: 100%;
+  max-width: 68em;
+}
+
+.row-full {
+  height: 100%;
+}
+
+.main-logo {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin: 2rem 0;
+
+}
+
+.nerd {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 48em) {
+  .main-logo {
+    display: inline-block;
+    width: 100%;
+  }
+}
