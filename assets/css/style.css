@@ -18,9 +18,20 @@ a {
 }
 
 body {
-  background-color: #ffedca;
+  background:  #ffedca;
   font-size: 16px;
   font-family: 'Space Mono', monospace;
+}
+
+body:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url(../images/noise-texture.png);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 .container-fluid-height{
@@ -37,11 +48,19 @@ body {
   width: 90%;
   margin: 0 auto;
   margin: 2rem 0;
-
 }
 
 .nerd {
   margin-bottom: 2rem;
+}
+
+strong.name {
+  font-weight: 700;
+  display: block;
+}
+
+a.webpage {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 48em) {
