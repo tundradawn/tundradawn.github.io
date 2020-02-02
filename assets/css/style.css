@@ -31,7 +31,7 @@ body:after {
   background-image: url(../images/noise-texture.png);
   position: absolute;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.1;
 }
 
 .container-fluid-height{
