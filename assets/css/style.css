@@ -18,9 +18,18 @@ a {
 }
 
 body {
-  background-color: #ffedca;
+  background:  #ffedca;
   font-size: 16px;
   font-family: 'Space Mono', monospace;
+}
+
+body:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/noise-texture.png);
+  position: absolute;
+  opacity: 0.15;
 }
 
 .container-fluid-height{
