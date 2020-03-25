@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline:1px solid red;
+  outline:1px solid rgba(91,90,76,.21);
 }
 
 html,
@@ -11,66 +11,36 @@ body {
 }
 
 html {
-  font-size: 14px;
-}
-
-a {
-  color: #000;
-}
-
-body {
-  background:  #fff;
   font-size: 16px;
   font-family: 'Work Sans', sans-serif;
 }
-
-body:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-image: url(../images/noise-texture.png);
-  position: absolute;
-  z-index: -1;
-  opacity: 0.1;
+body {
+  background: #504c9d;
 }
+
+a {
+  color: #fff;
+}
+
 .wrapper{
   height:100%;
-  background:#FF7A00;
 }
-.container-fluid-height{
+
+.container{
   height: 100%;
   max-width: 26em;
+  color:#fff;
 }
-.container-fluid-height ul li {
+
+.container ul li {
   display:inline-block;
 }
-.row-full {
-  height: 100%;
-}
-.main-logo {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-  margin: 2rem 0;
+.container header{
+  font-weight:bold;
+  font-size:1.1rem;
 }
 
-.nerd {
-  margin-bottom: 2rem;
-}
-
-strong.name {
-  font-weight: 700;
-  display: block;
-}
-
-a.webpage {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (min-width: 48em) {
-  .main-logo {
-    display: inline-block;
-    width: 100%;
-  }
+.container ul.team{
+  margin:1.5rem 0;
+  font-size:0.8rem;
 }
