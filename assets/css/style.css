@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline:1px solid red;
 }
 
 html,
@@ -18,9 +19,9 @@ a {
 }
 
 body {
-  background:  #ffedca;
+  background:  #fff;
   font-size: 16px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body:after {
@@ -33,16 +34,19 @@ body:after {
   z-index: -1;
   opacity: 0.1;
 }
-
+.wrapper{
+  background:#FF7A00;
+}
 .container-fluid-height{
   height: 100%;
-  max-width: 68em;
+  max-width: 26em;
 }
-
+.container-fluid-height ul li {
+  display:inline-block;
+}
 .row-full {
   height: 100%;
 }
-
 .main-logo {
   display: block;
   width: 90%;
