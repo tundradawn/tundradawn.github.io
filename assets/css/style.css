@@ -39,7 +39,10 @@ a {
   font-weight:bold;
   font-size:1.1rem;
 }
-
+img.dist-logo {
+  max-height:30px;
+  max-width:30px;
+}
 .container ul.team{
   margin:1.5rem 0;
   font-size:0.8rem;
