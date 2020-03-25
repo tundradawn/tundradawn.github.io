@@ -18,12 +18,11 @@ body {
   background: #6449F9;
   background-image:
     url('../img/bg.jpg'),
-    url('../img/grain.gif');
+    url('../img/grain_s.gif');
   background-repeat: none;
   background-position: center;
   background-size: cover, auto;
   background-blend-mode: overlay;
-  /* backdrop-filter: opacity(20%); */
 }
 
 a {
