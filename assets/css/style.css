@@ -20,7 +20,7 @@ body {
     url('../img/grain_ss.gif');
   background-repeat: none;
   background-position: center;
-  background-size: cover, auto;
+  background-size: cover, 600px;
   background-blend-mode: overlay;
 }
 a {
