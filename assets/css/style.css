@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline:1px solid rgba(91,90,76,.21);
+  /* outline:1px solid rgb(255,153,0); */
 }
 
 html,
@@ -16,6 +16,14 @@ html {
 }
 body {
   background: #6449F9;
+  background-image:
+    url('../img/bg.jpg'),
+    url('../img/grain.gif');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover, auto;
+  background-blend-mode: overlay;
+  /* backdrop-filter: opacity(20%); */
 }
 
 a {
@@ -31,7 +39,6 @@ a {
   max-width: 26em;
   color:#fff;
 }
-
 .container ul li {
   display:inline-block;
 }
@@ -39,11 +46,22 @@ a {
   font-weight:bold;
   font-size:1.1rem;
 }
-img.dist-logo {
-  max-height:30px;
-  max-width:30px;
-}
+
 .container ul.team{
   margin:1.5rem 0;
   font-size:0.8rem;
+}
+.container ul.dist{
+  justify-content: center;
+}
+.container ul.dist li{
+  margin:0 1.1rem;
+  display:flex;
+  align-items: center;
+}
+
+img.dist-logo {
+  margin:0 0.4rem;
+  max-height:30px;
+  max-width:30px;
 }
