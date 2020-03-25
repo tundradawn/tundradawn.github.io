@@ -35,6 +35,7 @@ body:after {
   opacity: 0.1;
 }
 .wrapper{
+  height:100%;
   background:#FF7A00;
 }
 .container-fluid-height{
