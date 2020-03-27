@@ -26,7 +26,16 @@ body {
 a {
   color: #fff;
 }
-
+@media (max-width: 360px) {
+  ul.dist{
+    margin-top:2rem;
+  }
+  ul.team li {
+    margin:0.7rem 0rem;
+    width:100%;
+    text-align: center;
+  }
+}
 .wrapper{
   height:100%;
 }
