@@ -49,25 +49,109 @@ a {
   display:inline-block;
 }
 .container header{
+  /**
+   * State pre-load
+   *
+   * @type {State}
+   */
+  margin-bottom:-2.5rem;
+  animation-name: loadHeader;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 560ms;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
   font-weight:bold;
   font-size:1.1rem;
 }
-
-.container ul.team{
-  margin:1.5rem 0;
-  font-size:0.8rem;
-}
 .container ul.dist{
+  /**
+   * State pre-load
+   *
+   * @type {State}
+   */
+  margin-top:-2.5rem;
+  animation-name: loadDist;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 560ms;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  opacity:0;
   justify-content: center;
 }
-.container ul.dist li{
-  margin:0 1.1rem;
+
+@keyframes loadTeam {
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:0.75;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes loadHeader {
+  0%{
+    margin-bottom:-2.5rem;
+  }
+  100% {
+    margin-bottom:0rem;
+  }
+}
+
+@keyframes loadDist {
+  0%{
+    margin-top:-2.5rem;
+  }
+  100% {
+      margin-top:0rem;
+      opacity:1;
+  }
+}
+.container ul.team {
+  margin:1.5rem 0;
+  text-align: center;
+  display: block;
+  align-items: center;
+  position: relative;
+  /**
+   * State pre-load
+   *
+   * @type {State}
+   */
+  opacity:0;
+  animation-name: loadTeam;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 560ms;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-size:0.8rem;
+}
+.container ul.team li{
+  margin:0 0.3rem;
+  position: relative;
+}
+.container ul.dist li {
+  margin:0 0.4rem;
   display:flex;
+  text-align: center;
   align-items: center;
 }
 
 img.dist-logo {
   margin:0 0.4rem;
-  max-height:30px;
-  max-width:30px;
+  max-height:25px;
+  max-width:25px;
 }
+/**
+ * Animations
+ */
