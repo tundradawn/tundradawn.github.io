@@ -26,7 +26,13 @@ body {
 }
 a {
   color: #fff;
+  text-decoration: none;
 }
+
+a:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 360px) {
   ul.dist{
     margin-top:2rem;
