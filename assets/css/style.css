@@ -18,10 +18,11 @@ body {
   background-image:
     url('../img/bg.jpg'),
     url('../img/grain_ss.gif');
-  background-repeat: none;
+  background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover, 600px;
   background-blend-mode: overlay;
+  -webkit-font-smoothing: antialiased;
 }
 a {
   color: #fff;
@@ -48,13 +49,12 @@ a {
 .container ul li {
   display:inline-block;
 }
-.container header{
+.container header {
   /**
    * State pre-load
    *
    * @type {State}
    */
-  margin-bottom:-2.5rem;
   animation-name: loadHeader;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -65,14 +65,11 @@ a {
 
   font-weight:bold;
   font-size:1.1rem;
+
+  transform: translateY(2.5rem);
 }
 .container ul.dist{
-  /**
-   * State pre-load
-   *
-   * @type {State}
-   */
-  margin-top:-2.5rem;
+
   animation-name: loadDist;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -86,33 +83,33 @@ a {
 }
 
 @keyframes loadTeam {
-  0%{
+  0% {
     opacity:0;
   }
-  50%{
-    opacity:0.75;
-  }
+
   100% {
     opacity:1;
   }
 }
 
 @keyframes loadHeader {
-  0%{
-    margin-bottom:-2.5rem;
+  0% {
+    transform: translateY(2.5rem);
   }
+
   100% {
-    margin-bottom:0rem;
+    transform: translateY(0rem);
   }
 }
 
 @keyframes loadDist {
   0%{
-    margin-top:-2.5rem;
+    transform: translateY(-2.5rem);
   }
+
   100% {
-      margin-top:0rem;
-      opacity:1;
+    transform: translateY(0rem);
+    opacity:1;
   }
 }
 .container ul.team {
@@ -128,13 +125,13 @@ a {
    */
   opacity:0;
   animation-name: loadTeam;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease;
-  animation-delay: 560ms;
+  animation-delay: 0.69s;
   animation-direction: alternate;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  font-size:0.8rem;
+  font-size:1rem;
 }
 .container ul.team li{
   margin:0 0.3rem;
