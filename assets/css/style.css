@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline:1px solid rgb(255,153,0); */
+   /*outline:1px solid rgb(255,153,0); */
 }
 
 html,
@@ -49,15 +49,17 @@ a:hover {
 
 .container{
   height: 100%;
-  max-width: 26em;
+  width: 26rem;
   color:#fff;
+  /*outline: 2px solid white;*/
 }
 .container ul li {
-  display:inline-block;
+  display: block;
 }
 .container header {
   font-weight:bold;
   font-size:1.1rem;
+  margin-bottom: 1rem;
 }
 .container ul.dist{
   opacity:1;
@@ -65,10 +67,9 @@ a:hover {
 }
 
 .container ul.team {
-  margin:1.5rem 0;
-  text-align: center;
+  text-align: left;
   display: block;
-  align-items: center;
+  align-items: left;
   position: relative;
   opacity: 1;
   font-size:1rem;
@@ -80,14 +81,34 @@ a:hover {
 .container ul.dist li {
   margin:0 0.4rem;
   display:flex;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
 }
 
 img.dist-logo {
   margin:0 0.4rem;
   max-height:25px;
   max-width:25px;
+}
+
+.bandcamp {
+  text-align: left;
+  justify-content: left;
+}
+
+.bandcamp:after {
+  content: "\2014";
+  color: white;
+  /*display: block;*/
+  /*position: relative;*/
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.bandcamp a {
+  display: block;
+
+  margin-top: 1rem;
 }
 /**
  * Animations
