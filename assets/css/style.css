@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline:1px solid rgb(255,153,0); */
 }
 
 html,
@@ -22,7 +21,6 @@ body {
   background-position: center;
   background-size: cover, 600px;
   background-blend-mode: overlay;
-  -webkit-font-smoothing: antialiased;
 }
 a {
   color: #fff;
@@ -55,34 +53,43 @@ a {
    *
    * @type {State}
    */
-  animation-name: loadHeader;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 560ms;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  
+  will-change: transform;
+  -webkit-animation-name: loadHeader;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 400ms;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
 
   font-weight:bold;
   font-size:1.1rem;
 
-  transform: translateY(2.5rem);
+  -webkit-transform: translate(0, 40xp);
+  transform: translate(0, 2.5rem);
+
+  /*-webkit-transform: translate(0, 2.5rem);
+  transform: translate(0, 2.5rem);*/
 }
 .container ul.dist{
-
-  animation-name: loadDist;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 560ms;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  will-change: transform;
+  -webkit-animation-name: loadDist;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 400ms;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
 
   opacity:0;
   justify-content: center;
+
+  -webkit-transform: translateY(0rem);
+  transform: translateY(0rem);
 }
 
-@keyframes loadTeam {
+@-webkit-keyframes loadTeam {
   0% {
     opacity:0;
   }
@@ -92,22 +99,39 @@ a {
   }
 }
 
+@-webkit-keyframes loadHeader {
+  from {
+    -webkit-transform: translate(0, 2.5rem);
+    transform: translateY(0, 2.5rem);
+  }
+
+  to {
+    -webkit-transform: translate(0, 0rem);
+    transform: translate(0, 0rem);
+  }
+}
+
+
 @keyframes loadHeader {
-  0% {
+  from {
+    -webkit-transform: translateY(2.5rem);
     transform: translateY(2.5rem);
   }
 
-  100% {
+  to {
+    -webkit-transform: translateY(0rem);
     transform: translateY(0rem);
   }
 }
 
-@keyframes loadDist {
+@-webkit-keyframes loadDist {
   0%{
+    -webkit-transform: translateY(-2.5rem);
     transform: translateY(-2.5rem);
   }
 
   100% {
+    -webkit-transform: translateY(0rem);
     transform: translateY(0rem);
     opacity:1;
   }
@@ -123,15 +147,16 @@ a {
    *
    * @type {State}
    */
-  opacity:0;
-  animation-name: loadTeam;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0.69s;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  opacity: 0;
+  -webkit-animation-name: loadTeam;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0.69s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards; 
   font-size:1rem;
+  line-height: 1.9;
 }
 .container ul.team li{
   margin:0 0.3rem;
