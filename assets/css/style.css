@@ -34,15 +34,13 @@ a:hover {
 }
 
 @media (max-width: 360px) {
-  ul.dist{
-    margin-top:2rem;
-  }
   ul.team li {
     margin:0.7rem 0rem;
     width:100%;
     text-align: center;
   }
 }
+
 .wrapper{
   height:100%;
 }
@@ -51,7 +49,6 @@ a:hover {
   height: 100%;
   width: 26rem;
   color:#fff;
-  /*outline: 2px solid white;*/
 }
 .container ul li {
   display: block;
@@ -61,11 +58,6 @@ a:hover {
   font-size:1.1rem;
   margin-bottom: 1rem;
 }
-.container ul.dist{
-  opacity:1;
-  justify-content: center;
-}
-
 .container ul.team {
   text-align: left;
   display: block;
@@ -78,18 +70,6 @@ a:hover {
   margin:0 0.3rem;
   position: relative;
 }
-.container ul.dist li {
-  margin:0 0.4rem;
-  display:flex;
-  text-align: left;
-  align-items: left;
-}
-
-img.dist-logo {
-  margin:0 0.4rem;
-  max-height:25px;
-  max-width:25px;
-}
 
 .bandcamp {
   text-align: left;
@@ -99,17 +79,11 @@ img.dist-logo {
 .bandcamp:after {
   content: "\2014";
   color: white;
-  /*display: block;*/
-  /*position: relative;*/
   width: 100%;
   padding-top: 1rem;
 }
 
 .bandcamp a {
   display: block;
-
   margin-top: 1rem;
 }
-/**
- * Animations
- */
