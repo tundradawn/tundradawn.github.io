@@ -22,6 +22,8 @@ body {
   background-size: cover, 600px;
   background-blend-mode: overlay;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  font-size: 1rem;
 }
 a {
   color: #fff;
@@ -34,19 +36,18 @@ a:hover {
 
 .wrapper{
   height:100%;
+  padding: 0 2rem;
 }
 
 .container{
   height: 100%;
-  width: 26rem;
-  color:#fff;
+  width: 100%;
+  color: #fff;
 }
 .container ul li {
   display: block;
 }
 .container header {
-  font-weight:bold;
-  font-size:1.1rem;
   margin-bottom: 1rem;
 }
 .container ul.team {
@@ -55,7 +56,6 @@ a:hover {
   text-align: left;
   display: block;
   position: relative;
-  font-size:1rem;
 }
 
 .bandcamp {
@@ -74,4 +74,15 @@ a:hover {
 .bandcamp a {
   display: block;
   margin-top: 1rem;
+}
+
+/* Larger screens */
+@media only screen and (min-width: 62em) {
+  .container {
+    width: 26rem;
+  }
+
+  .wrapper {
+    padding: 0 0;
+  }
 }
