@@ -16,7 +16,7 @@ html {
 body {
   background-image:
     url('../img/bg.jpg'),
-    url('../img/grain_ss.gif');
+    url('../img/grain.gif');
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover, 600px;
@@ -58,20 +58,20 @@ a:hover {
   position: relative;
 }
 
-.bandcamp {
+.everywhere {
   text-align: left;
   justify-content: left;
   margin-bottom:0.7rem;
 }
 
-.bandcamp:after {
+.everywhere:after {
   content: "\2014";
   color: white;
   width: 100%;
   padding-top: 1rem;
 }
 
-.bandcamp a {
+.everywhere a {
   display: block;
   margin-top: 1rem;
 }
