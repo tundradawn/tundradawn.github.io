@@ -16,7 +16,7 @@ html {
 body {
   background-image:
     url('../img/bg.jpg'),
-    url('../img/grain_ss.gif');
+    url('../img/grain.gif');
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover, 600px;
