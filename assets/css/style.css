@@ -58,20 +58,20 @@ a:hover {
   position: relative;
 }
 
-.bandcamp {
+.everywhere {
   text-align: left;
   justify-content: left;
   margin-bottom:0.7rem;
 }
 
-.bandcamp:after {
+.everywhere:after {
   content: "\2014";
   color: white;
   width: 100%;
   padding-top: 1rem;
 }
 
-.bandcamp a {
+.everywhere a {
   display: block;
   margin-top: 1rem;
 }
