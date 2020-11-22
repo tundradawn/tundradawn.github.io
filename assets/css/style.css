@@ -14,15 +14,15 @@ html {
   font-family: 'Work Sans', sans-serif;
 }
 body {
-  background-image:
+  /* background-image:
     url('../img/bg.jpg'),
     url('../img/grain.gif');
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover, 600px;
   background-blend-mode: overlay;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  -webkit-font-smoothing: antialiased; */
+  /* overflow: hidden; */
   font-size: 1rem;
 }
 a {
@@ -33,47 +33,99 @@ a {
 a:hover {
   opacity: 0.8;
 }
+section {
+  padding:4em 0;
+  width:100%;
+}
+
 
 .wrapper{
-  height:100%;
-  padding: 0 2rem;
+  margin: 0 auto;
+  width: 960px;
 }
 
-.container{
-  height: 100%;
-  width: 100%;
-  color: #fff;
+
+#hero{
+  margin:0;
+  height:70vh;
+  background-color: #FF0C54;
+  color:#fff;
 }
-.container ul li {
-  display: block;
+
+nav#site {
+  height:60px;
+  align-items: center;
 }
-.container header {
-  margin-bottom: 1rem;
+nav#site .logo {
+  height:40px;
+  width:120px;
 }
-.container ul.team {
-  margin:0!important;
-  padding:0!important;
-  text-align: left;
-  display: block;
+
+
+#about {
+  padding:4em 0;
+  width:100%;
+}
+
+section#project .gallery .row {
+  padding:1.5rem 0;
+}
+
+
+section#project.motusphera .background {
+  padding:1.5rem 0;
   position: relative;
+  min-height:10px;
+  color:#fff;
+  background-color: #221F1F;
+}
+section#project.motusphera .feature {
+  margin:1.5rem 0;
+  width:100%;
+  height:540px;
+  position: relative;
+  top:0;
+  /* background-color: #FF0C54; */
+  margin-bottom:-160px;
 }
 
-.everywhere {
-  text-align: left;
-  justify-content: left;
-  margin-bottom:0.7rem;
-}
 
-.everywhere:after {
-  content: "\2014";
-  color: white;
-  width: 100%;
-  padding-top: 1rem;
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
 }
-
-.everywhere a {
+.embed-responsive {
+  position: relative;
   display: block;
-  margin-top: 1rem;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+section#project.motusphera iframe.video {
+  height:320px;
+  width:100%;
+}
+section#project.motusphera aside {
+  padding-top:170px;
+}
+
+#footer{
+  margin:0;
+  width:100%;
+  height:70vh;
+  background-color: #000000;
+  color:#fff;
+}
+#footer .wrapper {
+  align-items: center;
+}
+.wrapper img {
+  height:auto;
+  width:100%;
+}
+
+img.td-glyph {
+  width:40px;
+  height:40px;
 }
 
 /* Larger screens */
