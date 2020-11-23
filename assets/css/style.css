@@ -45,8 +45,15 @@ section {
 section#hero{
   margin:0;
   height:70vh;
-  background-color: #FF0055;
+  background: linear-gradient(#880055, #880055), url('../img/grain.gif');
+  background-repeat:repeat;
+  background-position: center;
+  background-size: cover, 600px;
+  background-blend-mode: overlay;
+  position: relative;
+  top:0;
   color:#fff;
+
 }
 section#hero .email {
   text-align:right;
