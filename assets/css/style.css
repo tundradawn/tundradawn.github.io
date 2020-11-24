@@ -38,13 +38,52 @@ section {
 
 .wrapper{
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
+
+.wrapper img {
+  height:auto;
+  max-width:100%;
+}
+
+@media screen and (max-width: 75rem) {
+  .wrapper{
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 62rem) {
+  nav#site .email {
+    font-size:0.8rem;
+  }
+  section#footer .col-xs-12 {
+    margin:1rem 0;
+  }
+  section#project .gallery .col-xs-12{
+    margin:0.5rem 0;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .wrapper{
+    width: 90%;
+  }
+  section#project .gallery .col-xs-12{
+    padding:0px;
+  }
+  section#about .image {
+    padding:4rem 0;
+    justify-content: center;
+    display:flex;
+  }
+}
+
+
 
 
 section#hero{
   margin:0;
-  height:70vh;
+  height:400px;
   background: linear-gradient(#880055, #880055), url('../img/grain.gif');
   background-repeat:repeat;
   background-position: center;
@@ -69,6 +108,11 @@ section#hero h1 {
   font-size:2rem;
 }
 
+section#hero .content {
+  height:300px;
+  align-items: center;
+}
+
 nav#site {
   height:60px;
   align-items: center;
@@ -85,6 +129,7 @@ section#about {
   line-height:1.45;
 }
 
+
 section#project {
   line-height:1.45;
 }
@@ -97,7 +142,7 @@ section#project p {
 }
 
 section#project .gallery .row {
-  padding:1.5rem 0;
+  margin:1.5rem 0;
 }
 
 
@@ -108,23 +153,34 @@ section#project.motusphera .background {
   color:#fff;
   background-color: #221F1F;
 }
-section#project.motusphera .feature {
-  margin:1.5rem 0;
-  width:100%;
-  height:540px;
+section#project.motusphera .slash {
   position: relative;
   top:0;
-  /* background-color: #FF0C54; */
-  margin-bottom:-240px;
+}
+section#project.motusphera .slash .bg {
+  background-color: #221F1F;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:80%;
+}
+section#project.motusphera .feature {
+  /* margin-bottom:1.5rem; */
+  background-color: #880055;
+  width:100%;
+  /* height:660px; */
+  position: relative;
+  top:0;
 }
 
 section#project.motusphera iframe {
-  margin-top:1rem;
-  height:260px;
+  /* margin-top:1rem; */
+  /* height:260px; */
   width:100%;
 }
 section#project.motusphera aside {
-  padding-top:120px;
+  /* padding-top:10%; */
 }
 
 /* three nights */
@@ -170,10 +226,6 @@ section#project.threenights aside {
 }
 #footer .wrapper {
   align-items: center;
-}
-.wrapper img {
-  height:auto;
-  width:100%;
 }
 
 img.td-glyph {
