@@ -14,15 +14,15 @@ html {
   font-family: 'Work Sans', sans-serif;
 }
 body {
-  background-image:
+  /* background-image:
     url('../img/bg.jpg'),
     url('../img/grain.gif');
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover, 600px;
   background-blend-mode: overlay;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  -webkit-font-smoothing: antialiased; */
+  /* overflow: hidden; */
   font-size: 1rem;
 }
 a {
@@ -30,50 +30,207 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.8;
+section {
+  padding:4em 0;
+  width:100%;
 }
+
 
 .wrapper{
-  height:100%;
-  padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-.container{
-  height: 100%;
-  width: 100%;
-  color: #fff;
+.wrapper img {
+  height:auto;
+  max-width:100%;
 }
-.container ul li {
-  display: block;
+
+@media screen and (max-width: 75rem) {
+  .wrapper{
+    margin: 0 auto;
+    width: 85%;
+  }
 }
-.container header {
-  margin-bottom: 1rem;
+
+@media screen and (max-width: 62rem) {
+  nav#site .email {
+    font-size:0.8rem;
+  }
+  section#footer .col-xs-12 {
+    margin:1rem 0;
+  }
+  section#project .gallery .col-xs-12{
+    margin:0.5rem 0;
+  }
 }
-.container ul.team {
-  margin:0!important;
-  padding:0!important;
-  text-align: left;
-  display: block;
+@media screen and (max-width: 48rem) {
+  .wrapper{
+    width: 90%;
+  }
+  section#project .gallery .col-xs-12{
+    padding:0px;
+  }
+  section#about .image {
+    padding:4rem 0;
+    justify-content: center;
+    display:flex;
+  }
+}
+
+
+
+
+section#hero{
+  margin:0;
+  height:400px;
+  background: linear-gradient(#880055, #880055), url('../img/grain.gif');
+  background-repeat:repeat;
+  background-position: center;
+  background-size: cover, 600px;
+  background-blend-mode: overlay;
   position: relative;
+  top:0;
+  color:#fff;
+
+}
+section#hero .email {
+  text-align:right;
+}
+section#hero .email a:hover{
+  opacity: 1;
+  text-decoration:underline;
+}
+/* section#hero .email a{
+  text-decoration:underline;
+} */
+section#hero h1 {
+  font-size:2rem;
 }
 
-.everywhere {
-  text-align: left;
-  justify-content: left;
-  margin-bottom:0.7rem;
+section#hero .content {
+  height:300px;
+  align-items: center;
 }
 
-.everywhere:after {
-  content: "\2014";
-  color: white;
-  width: 100%;
-  padding-top: 1rem;
+nav#site {
+  height:60px;
+  align-items: center;
+}
+nav#site .logo {
+  height:40px;
+  width:120px;
 }
 
-.everywhere a {
-  display: block;
-  margin-top: 1rem;
+
+section#about {
+  padding:4em 0;
+  width:100%;
+  line-height:1.45;
+}
+
+
+section#project {
+  line-height:1.45;
+}
+section#project h1 {
+  margin-bottom:1rem;
+}
+section#project p {
+  margin:0.5rem 0;
+  padding:0.5rem 0rem;
+}
+
+section#project .gallery .row {
+  margin:1.5rem 0;
+}
+
+
+section#project.motusphera .background {
+  padding:1.5rem 0;
+  position: relative;
+  min-height:10px;
+  color:#fff;
+  background-color: #221F1F;
+}
+section#project.motusphera .slash {
+  position: relative;
+  top:0;
+}
+section#project.motusphera .slash .bg {
+  background-color: #221F1F;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:80%;
+}
+section#project.motusphera .feature {
+  /* margin-bottom:1.5rem; */
+  background-color: #880055;
+  width:100%;
+  /* height:660px; */
+  position: relative;
+  top:0;
+}
+
+section#project.motusphera iframe {
+  /* margin-top:1rem; */
+  /* height:260px; */
+  width:100%;
+}
+section#project.motusphera aside {
+  /* padding-top:10%; */
+}
+
+/* three nights */
+section#project.threenights .background {
+  padding:1.5rem 0;
+  position: relative;
+  min-height:10px;
+  color:#fff;
+  background-color: #1D1B4C;
+}
+
+section#project.threenights .feature {
+  margin:1.5rem 0;
+  width:100%;
+  height:60px;
+  position: relative;
+  top:0;
+  margin-bottom:-40px;
+}
+section#project.threenights .feature img{
+  height:auto;
+  width:64px;
+  border-radius: 51%;
+}
+
+/* section#project.threenights .feature img:hover{
+  position:relative;
+  top:-5px;
+} */
+
+section#project.threenights aside {
+  padding-top:40px;
+}
+
+
+
+#footer{
+  margin:0;
+  width:100%;
+  height:70vh;
+  background-color: #000000;
+  color:#fff;
+}
+#footer .wrapper {
+  align-items: center;
+}
+
+img.td-glyph {
+  width:40px;
+  height:40px;
 }
 
 /* Larger screens */
