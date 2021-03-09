@@ -3,86 +3,114 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
+body,
 html {
-  font-size: 16px;
-  font-family: 'Work Sans', sans-serif;
-}
-body {
-  background-image:
-    url('../img/bg.jpg'),
-    url('../img/grain.gif');
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover, 600px;
-  background-blend-mode: overlay;
-  -webkit-font-smoothing: antialiased;
-  overflow: hidden;
-  font-size: 1rem;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-.wrapper{
-  height:100%;
-  padding: 0 2rem;
-}
-
-.container{
   height: 100%;
   width: 100%;
-  color: #fff;
-}
-.container ul li {
-  display: block;
-}
-.container header {
-  margin-bottom: 1rem;
-}
-.container ul.team {
-  margin:0!important;
-  padding:0!important;
-  text-align: left;
-  display: block;
-  position: relative;
 }
 
-.everywhere {
-  text-align: left;
-  justify-content: left;
-  margin-bottom:0.7rem;
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #B2B4E8;
+  background: #000;
+  background-image: url(../img/stars.jpg);
+  overflow: hidden;
 }
 
-.everywhere:after {
-  content: "\2014";
-  color: white;
+.container {
+  padding: 0 2em;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  animation: fadeUp 1s;
+  animation-fill-mode: forwards;
+}
+
+.horizon {
+  background: linear-gradient(rgba(4, 4, 12, 0) 0%, rgb(21, 18, 75, 100) 100%);
   width: 100%;
-  padding-top: 1rem;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
-.everywhere a {
-  display: block;
-  margin-top: 1rem;
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
-/* Larger screens */
-@media only screen and (min-width: 62em) {
-  .container {
-    width: 26rem;
+.hero h1 {
+  font-size: 3em;
+  display: inline-block;
+  margin-right: 0.15em;
+  opacity: 0;
+  animation: animIn 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1, .5, 1);
+  color: #B2B4E8;
+}
+
+.hero h2 {
+  color: #626493;
+  font-weight: 100;
+  opacity: 0;
+  animation: animIn 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.1, 1, .5, 1);
+}
+
+.headline {
+  width: 100%;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+.anim2 {
+  animation-delay: 0.1s !important;
+}
+
+.anim3 {
+  animation-delay: 0.2s !important;
+}
+
+.anim4 {
+  animation-delay: 0.3s !important;
+}
+
+.anim5 {
+  animation-delay: 1.3s !important;
+}
+
+@keyframes animIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
 
-  .wrapper {
-    padding: 0 0;
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
